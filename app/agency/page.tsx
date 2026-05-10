@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Meeting from "app/components/cal";
 
 export const metadata: Metadata = {
   title: "Studio1 | Technical Content and Developer Relations Agency",
@@ -105,7 +104,6 @@ export default function page() {
           scaling developer adoption, we can help.
         </p>
       </div>
-      <Meeting />
     </div>
   );
 }
