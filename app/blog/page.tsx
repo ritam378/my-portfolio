@@ -6,19 +6,19 @@ import { getBlogPosts } from "./utils";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Read my blog.",
+  description: "Read my writing on Data Engineering, Big Data, Cloud, and AI/ML.",
   openGraph: {
-    title: "Blog | Arindam",
-    description: "Blogs of Arindam Majumder.",
+    title: "Blog | Ritam Mukherjee",
+    description: "Articles by Ritam Mukherjee on Data Engineering, Big Data, Cloud, and AI/ML.",
     url: baseUrl + "/blog",
-    siteName: "Arindam Majumder",
+    siteName: "Ritam Mukherjee",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    title: "Blog | Arindam",
+    title: "Blog | Ritam Mukherjee",
     card: "summary_large_image",
-    description: "Blogs of Arindam Majumder.",
+    description: "Articles by Ritam Mukherjee on Data Engineering, Big Data, Cloud, and AI/ML.",
   },
 };
 

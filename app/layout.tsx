@@ -13,22 +13,25 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Arindam Majumder",
-    template: "%s | Arindam Majumder",
+    default: "Ritam Mukherjee",
+    template: "%s | Ritam Mukherjee",
   },
-  description: "Developer, Technical Writer, Community Builder",
+  description:
+    "Principal Data Engineer & Architect. Writing about Data Engineering, Big Data, Cloud, and AI/ML.",
   openGraph: {
-    title: "Arindam Majumder",
-    description: "DevRel, Technical Writer, Community Builder",
+    title: "Ritam Mukherjee",
+    description:
+      "Principal Data Engineer & Architect. Writing about Data Engineering, Big Data, Cloud, and AI/ML.",
     url: baseUrl,
-    siteName: "Arindam Majumder",
+    siteName: "Ritam Mukherjee",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    title: "Arindam Majumder",
+    title: "Ritam Mukherjee",
     card: "summary_large_image",
-    description: "DevRel, Technical Writer, Community Builder",
+    description:
+      "Principal Data Engineer & Architect. Writing about Data Engineering, Big Data, Cloud, and AI/ML.",
   },
   robots: {
     index: true,

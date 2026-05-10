@@ -9,15 +9,10 @@ export default async function Blog({
   const { slug } = await params;
   const posts = await getBlogPosts();
 
-  // Try to find the article by slug and redirect to DEV.to
+  // Try to find the article by slug and redirect to Medium
+  // Medium URL format: https://medium.com/@ritam378/post-title-slug-hash
   const post = posts.find((post) => {
-    // Extract slug from DEV.to URL (format: https://dev.to/username/slug-xxxx)
-    const urlSlug = post.url
-      .split("/")
-      .pop()
-      ?.split("-")
-      .slice(0, -1)
-      .join("-");
+    const urlSlug = post.url.split("/").pop();
     return urlSlug === slug;
   });
 

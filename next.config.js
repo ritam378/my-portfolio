@@ -4,15 +4,13 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.hashnode.com",
+        hostname: "miro.medium.com",
         port: "",
-        //   pathname: '/account123/**',
       },
       {
         protocol: "https",
-        hostname: "dev-to-uploads.s3.amazonaws.com",
+        hostname: "cdn-images-1.medium.com",
         port: "",
-        //   pathname: '/**',
       },
     ],
   },

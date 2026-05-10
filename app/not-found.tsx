@@ -5,9 +5,9 @@ export default function NotFound() {
         Oh no! This page doesn't exist.
       </h1>
       <p>
-        If you expected to see something here, let me know (
-        <a href="mailto:arindammajumder2020@gmail.com" className="underline">
-          arindammajumder@gmail.com
+        If you expected to see something here, let me know at (
+        <a href="mailto:ritam378@gmail.com" className="underline">
+          ritam378@gmail.com
         </a>
         ).
       </p>

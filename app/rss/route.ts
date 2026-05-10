@@ -25,11 +25,11 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-        <title>Arindam's Portfolio</title>
+        <title>Ritam Mukherjee's Blog</title>
         <link>${baseUrl}</link>
-        <description>Stay updated with the latest articles, projects, and insights from Arindam</description>
+        <description>Data Engineering, Big Data, Cloud, and AI/ML insights from Ritam Mukherjee</description>
         <language>en-us</language>
-        <managingEditor>arindammajumder2020@gmail.com (Arindam)</managingEditor>
+        <managingEditor>ritam378@gmail.com (Ritam Mukherjee)</managingEditor>
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         ${itemsXml}
     </channel>

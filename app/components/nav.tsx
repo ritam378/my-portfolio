@@ -8,27 +8,15 @@ const navItems = {
   "/": {
     name: "Home",
   },
-  "/work": {
-    name: "Work",
-  },
-  // "/agency": {
-  //   name: "Agency",
-  // },
-  "/blog": {
-    name: "Blog",
-  },
-  "/videos": {
-    name: "Videos",
+  "/linkedin": {
+    name: "Career",
   },
   "/projects": {
     name: "Projects",
   },
-  "/events": {
-    name: "Talks",
+  "/blog": {
+    name: "Articles",
   },
-  // "/testimonials": {
-  //   name: "Testimonials",
-  // },
   "/contact-me": {
     name: "Contact me",
   },
