@@ -8,6 +8,7 @@ export default async function sitemap() {
     "/linkedin",
     "/projects",
     "/contact-me",
+    "/book",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
