@@ -10,7 +10,6 @@ export function BlogPosts({
   posts,
   query,
   hideResultsCount = false,
-  variant = "default",
 }: {
   posts: BlogPost[];
   query: string;
@@ -86,33 +85,53 @@ export function BlogPosts({
         </div>
       )}
 
-      {/* Blog Posts List */}
-      <div>
+      {/* Blog Posts Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {displayedBlogs.map((post) => (
           <a
             key={post.url}
             href={post.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group flex flex-row items-center mb-6 hover:opacity-80 transition-opacity gap-2 ${
-              variant === "featured"
-                ? "p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50"
-                : ""
-            }`}
+            className="group flex flex-col rounded-lg border border-neutral-200 dark:border-neutral-700 overflow-hidden hover:opacity-80 transition-opacity"
             aria-label={`Read article: ${post.title}`}
           >
-            <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:w-[110px] tabular-nums flex-shrink-0">
-              {formatDate(post.datePublished, false)}
-            </p>
-            <p
-              className={`text-neutral-900 dark:text-neutral-100 tracking-tight whitespace-nowrap overflow-hidden text-ellipsis flex-1 min-w-0 ${
-                variant === "featured"
-                  ? "font-medium text-base"
-                  : "text-sm sm:text-base"
-              }`}
-            >
-              {highlightText(post.title, query)}
-            </p>
+            {/* Cover Image */}
+            {post.coverImage ? (
+              <img
+                src={post.coverImage}
+                alt={post.title}
+                className="w-full aspect-video object-cover"
+              />
+            ) : (
+              <div className="w-full aspect-video bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center">
+                <span className="text-4xl font-bold text-neutral-300 dark:text-neutral-600 select-none uppercase">
+                  {post.title.charAt(0)}
+                </span>
+              </div>
+            )}
+
+            {/* Card Content */}
+            <div className="p-4 flex flex-col flex-1">
+              <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-1 tabular-nums">
+                {formatDate(post.datePublished, false)}
+              </p>
+              <p className="font-medium text-sm tracking-tight text-neutral-900 dark:text-neutral-100 line-clamp-2 mb-3">
+                {highlightText(post.title, query)}
+              </p>
+              {post.tags.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mt-auto">
+                  {post.tags.slice(0, 3).map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2 py-0.5 rounded border border-neutral-200 dark:border-neutral-700 text-neutral-500 dark:text-neutral-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </a>
         ))}
       </div>

@@ -61,4 +61,4 @@ Feel free to reach out via email at [ritam378@gmail.com](mailto:ritam378@gmail.c
 
 This portfolio was built using an open-source template created by [Lee Robinson](https://leerob.io/).
 
-Special thanks to [Arindam Majumder](https://github.com/Arindam200/Portfolio) for inspiration and design reference.
+Special thanks to [Arindam Majumder](https://github.com/Arindam200/Portfolio) for the design reference.
