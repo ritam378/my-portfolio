@@ -61,7 +61,7 @@ export default function Page() {
             <span>
               <LinkedInIcon />
             </span>
-            Principal AI Engineer & Cloud Data Architect
+            Principal Bigdata & Cloud Engineer
           </p>
           <p className="flex items-center gap-2">
             <span>
